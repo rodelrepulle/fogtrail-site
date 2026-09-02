@@ -39,12 +39,16 @@
     <h2>Permissions FogTrail asks for</h2>
 
     <h3>Location — While Using the App</h3>
-    <p>FogTrail records your path <strong>only while a walk session is running</strong>
-    and the app is in use. It is used to lift fog as you move, to keep you inside a
-    place's area, and to work out the distance and elevation of your walk. The app
-    does not request Always access and does not use background location, so recording
-    pauses when your phone locks. Your path is saved to the walk on your device and
-    is not transmitted.</p>
+    <p>FogTrail records your path <strong>only while a walk session is running</strong>.
+    It is used to lift fog as you move, to keep you inside a place's area, and to work
+    out the distance and elevation of your walk. Your path is saved to the walk on
+    your device and is not transmitted.</p>
+    <p>Because a walk you have started should not stop because you put the phone in
+    your pocket, recording continues while the screen is off <em>for the length of
+    that walk</em>. iOS shows its blue location indicator the whole time. The moment
+    you end the walk, background recording is switched off again. FogTrail never
+    requests "Always" access — it only ever has When In Use — so outside a running
+    walk it has no location access to use.</p>
 
     <h3>Apple Health — step count, read only</h3>
     <p>With your permission FogTrail reads your <strong>step count</strong> from Apple
