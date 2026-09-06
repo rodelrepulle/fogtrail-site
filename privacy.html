@@ -10,19 +10,21 @@
   <div class="wrap">
     <header class="brand"><div class="dot"></div><h1>FogTrail</h1></header>
     <h1 class="title">Privacy Policy</h1>
-    <p class="updated">Last updated: September 5, 2026</p>
+    <p class="updated">Last updated: September 6, 2026</p>
 
     <div class="card">
-      <p><strong>The short version.</strong> FogTrail has no server of its own and
-      no FogTrail account. It contains no analytics, no advertising, no crash
-      reporting and no third-party SDKs. Your steps, your walks, your location while
-      walking and the fog you have lifted stay in the app's private storage on your
-      iPhone. <strong>We never receive any of it.</strong></p>
-      <p>Two things do involve Apple, and only Apple: you may
-      <strong>sign in with Apple</strong> to put a name on your own walker card, and
-      you may <strong>subscribe to FogTrail Pro</strong>. Both are handled by Apple
-      on its own terms. FogTrail keeps the name; it keeps nothing else from either,
-      and sends nothing of its own to anyone.</p>
+      <p><strong>The short version.</strong> Your steps, your walks, your location
+      while walking, your health data and the fog you have lifted stay in the app's
+      private storage on your iPhone. <strong>None of it is ever uploaded.</strong>
+      FogTrail contains no analytics, no advertising, no crash reporting and no
+      third-party tracking SDKs.</p>
+      <p>If you <strong>sign in with Apple</strong>, FogTrail creates an account for
+      you on our server. That account holds exactly two things: <strong>the name you
+      chose to share and your avatar colour.</strong> It holds no walking data of any
+      kind. Signing in is optional, the app works fully without it, and you can delete
+      the account and everything in it from inside the app at any time.</p>
+      <p>You may also <strong>subscribe to FogTrail Pro</strong>. That is handled by
+      Apple on its own terms; we never see a payment detail.</p>
     </div>
 
     <h2>What FogTrail stores on your device</h2>
@@ -34,15 +36,16 @@
       cleared, so a cleared place stays cleared.</li>
       <li><strong>Daily step totals</strong> and your daily step goal.</li>
       <li><strong>Your walker name and avatar colour</strong> — whatever you type,
-      or the first name Apple gives us if you sign in with Apple. It is a label on
-      a card in this app, not an account.</li>
+      or the first name Apple gives us if you sign in with Apple. A copy is kept on
+      your phone so the app works offline; if you are signed in, these two values are
+      also stored in your account, and they are the only things that are.</li>
       <li><strong>Places you keep, and photos you attach to them</strong> — if you
       turn a finished walk into a place of your own, the photo you choose is copied
       into the app's storage as a small image.</li>
       <li><strong>Places sent to you</strong> — a <code>.fogtrail</code> file a
       friend hands you through Messages, AirDrop, Mail or Files becomes a fogged
-      card in the app. It travels between two phones directly; it does not pass
-      through us, because there is no us for it to pass through.</li>
+      card in the app. It travels between two phones directly; it never passes
+      through our server.</li>
       <li><strong>App settings</strong> — such as whether you have completed
       onboarding and which step sources you have enabled.</li>
       <li><strong>The demo circle</strong> — Mara, Jun, Tess and Nico are seeded
@@ -57,17 +60,21 @@
     it — "Continue without an account" is always there, and nothing in the app is
     locked behind signing in.</p>
     <p>If you do use it, Apple shows you its own sheet and asks whether to share your
-    name. FogTrail asks Apple for <strong>your name and nothing else</strong> — not
-    your email address, not an identifier we keep. The name is written to your walker
-    card on this phone and is used for one thing: labelling you on the board and on
-    any place you choose to send. It is not transmitted anywhere, and there is no
-    account for it to belong to — nothing on our side changes when you sign in,
-    because there is nothing on our side.</p>
+    name. FogTrail asks Apple for <strong>your name and nothing else</strong> — in
+    particular we never request your email address, so no address, real or
+    private-relay, is given to us. The name is written to your walker card on this
+    phone and is used for one thing: labelling you on the board and on any place you
+    choose to send.</p>
+    <p>Signing in also creates your FogTrail account, which stores that name and your
+    avatar colour so the card follows you. Nothing else is stored with it — no walks,
+    no routes, no steps, no health data, no places. You can delete the account at any
+    time with <strong>Me → Settings &amp; privacy → Delete account</strong>.</p>
     <p>Your relationship with Apple during that sheet is governed by
     <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. You can
     review or stop app access to your Apple Account at any time in
     <strong>Settings → your name → Sign in with Apple</strong>. Clearing your data in
-    FogTrail (below) removes the name from this phone.</p>
+    FogTrail (below) removes the name from this phone; deleting your account (also
+    below) removes it from our server and asks Apple to revoke access as well.</p>
 
     <h2>FogTrail Pro — subscriptions</h2>
     <p>FogTrail Pro is an auto-renewing subscription sold through Apple's In-App
@@ -113,16 +120,31 @@
     transmitted.</p>
 
     <h2>What we collect</h2>
-    <p><strong>Nothing.</strong> FogTrail has no server, no database and no endpoint
-    of ours for anything to be sent to. We hold no account records, no profiles, no
-    logs and no backups of your data. We cannot see your walks, your steps, your
-    location or your health data, and we could not produce them if asked.</p>
-    <p>To be exact about the two Apple frameworks described above: signing in with
-    Apple and subscribing are transactions between <em>you and Apple</em>. We are not
-    given your email address, an advertising identifier, a device identifier, a
-    receipt or a payment detail by either of them, and neither one sends us anything
-    about you. The only thing that crosses into the app is the name you chose to
-    share, and it stops on your phone.</p>
+    <p><strong>If you do not sign in: nothing.</strong> There is no account, and
+    nothing leaves your phone.</p>
+    <p><strong>If you sign in with Apple</strong>, we store one row on our server
+    describing you as a walker:</p>
+    <ul>
+      <li><strong>Your name</strong> — the name you chose to share on Apple's sheet,
+      which you can edit or blank at any time.</li>
+      <li><strong>Your avatar colour</strong> — a single number.</li>
+      <li><strong>An account identifier</strong> — a random ID linking that row to your
+      Sign in with Apple identity, so the app knows the account is yours.</li>
+    </ul>
+    <p>That is the complete list. We do <strong>not</strong> receive or store your
+    walks, your routes, your location, your steps, your health data, the fog you have
+    lifted, the places you make, or the photos you attach to them. None of it is sent
+    to us, and we could not produce any of it if asked.</p>
+    <p><strong>We never ask Apple for your email address.</strong> FogTrail requests
+    only your name from Sign in with Apple, so no address — real or private-relay —
+    is given to us. If you use the app's own <em>Continue with email</em> option
+    instead, the address is used on your device to suggest a name and is not saved.</p>
+    <p>Subscribing is a transaction between <em>you and Apple</em>. We are not given an
+    advertising identifier, a device identifier, a receipt or a payment detail.</p>
+    <p>Your account row is stored on infrastructure operated for us by
+    <a href="https://supabase.com/privacy">Supabase</a> in Singapore. It is protected by
+    row-level security, so the only account that can read or change your row is
+    yours.</p>
 
     <h2>No tracking, no advertising</h2>
     <p>FogTrail does not track you across apps or websites, does not use the
@@ -137,7 +159,14 @@
     the app. A place you have not cleared appears in the file by its hint rather than
     its name, exactly as it does in the app.</p>
 
-    <h2>Deleting your data</h2>
+    <h2>Deleting your account</h2>
+    <p>If you signed in, open <strong>Me → Settings &amp; privacy → Delete
+    account</strong>. This permanently deletes your account row — your name, your
+    avatar colour and the identifier linking them to you — and asks Apple to revoke
+    FogTrail's access to your Apple Account. It cannot be undone, and we keep no
+    backup from which to restore it.</p>
+
+    <h2>Deleting your data on the device</h2>
     <p>Open <strong>Me → Settings &amp; privacy → Clear local data</strong>. This
     deletes every walk in your history, the path each one recorded, the revealed cells
     those walks earned, your saved daily steps, the places you made or were sent, the
@@ -153,29 +182,35 @@
     Subscriptions</strong>.</p>
 
     <h2>Children</h2>
-    <p>FogTrail is not directed at children and does not knowingly collect personal
-    information from anyone, of any age, because it does not collect personal
-    information at all.</p>
+    <p>FogTrail is not directed at children and we do not knowingly create accounts
+    for them. The only personal information an account holds is a name you choose,
+    which need not be your real one; if you believe a child has created an account,
+    delete it in the app or contact us and we will remove it.</p>
 
     <h2>Your rights</h2>
     <p>Privacy laws including Canada's PIPEDA and British Columbia's PIPA give you
     rights of access, correction and deletion over personal information an
-    organisation holds about you. We hold none: your information never reaches us, so
-    there is nothing for us to disclose, correct or delete. The data is in your hands
-    on your device, and the deletion control above is immediate. If you have a
+    organisation holds about you. If you have not signed in we hold nothing about you
+    at all. If you have, we hold only the name, avatar colour and account identifier
+    described above — you can read them on your walker card, correct the name in the
+    app, and delete all of it immediately with <strong>Delete account</strong>. Your
+    walks, location and health data never reach us, so there is nothing there for us to
+    disclose, correct or delete. If you have a
     question about this, email us.</p>
 
     <h2>Where FogTrail is available</h2>
     <p>FogTrail is offered in selected territories outside the European Union and
-    the European Economic Area. Wherever it is available, the answer above is the
-    same one: nothing you do in the app is transmitted to us or to anyone else, and
-    no local privacy law can require us to disclose, correct or delete information we
-    never receive.</p>
+    the European Economic Area. Wherever it is available, the answer above is the same
+    one: your walking is never transmitted to us, and the only information we hold is
+    the account row described above — which you can read, correct and delete yourself
+    from inside the app. If you sign in, that row is stored in Singapore.</p>
 
     <h2>Changes</h2>
-    <p>If FogTrail ever gains a feature that sends data anywhere — an account, a real
-    social circle, cloud backup — this policy will be updated before that version
-    ships, and the app will ask you before any data leaves your phone.</p>
+    <p>This policy was rewritten on 6 September 2026, when FogTrail gained hosted
+    accounts: before that version there was no server and no account at all. If
+    FogTrail gains a further feature that sends data anywhere — a real social circle,
+    cloud backup of your walks — this policy will be updated before that version ships,
+    and the app will ask you before any walking data leaves your phone.</p>
 
     <h2>Contact</h2>
     <p>Email <a href="mailto:13jayr37@gmail.com?subject=FogTrail%20Privacy">13jayr37@gmail.com</a>.</p>
