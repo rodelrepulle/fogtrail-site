@@ -118,8 +118,18 @@
     your pocket, recording continues while the screen is off <em>for the length of
     that walk</em>. iOS shows its blue location indicator the whole time. The moment
     you end the walk, background recording is switched off again. FogTrail never
-    requests "Always" access — it only ever has When In Use — so outside a running
-    walk it has no location access to use.</p>
+    requests "Always" access — it only ever has When In Use.</p>
+    <p>Outside a running walk, FogTrail reads where you are only when you tap
+    <strong>Current Location</strong> — once, to measure nearby places or help you
+    choose a Privacy Zone. Distance measurements expire after ten minutes and are
+    not saved or uploaded. A zone you choose is saved on your device.</p>
+    <p>Everywhere your walks have uncovered — your Fogprint — is stored on your phone
+    only. A Fogprint picture you choose to share leaves out the area around where each
+    walk began and ended, including the walk currently in progress, and shows no
+    map or street names. You can also choose a <strong>Privacy Zone</strong> in
+    Settings. Shared Fogprint pictures exclude that zone. Place files you create
+    exclude protected route portions, and a destination entirely within the zone
+    cannot be shared. Your personal map stays complete.</p>
 
     <h3>Apple Health — step count, read only</h3>
     <p>With your permission FogTrail reads your <strong>step count</strong> from Apple
@@ -181,6 +191,13 @@
     a message, or nowhere at all. The file is created locally and is not uploaded by
     the app. A place you have not cleared appears in the file by its hint rather than
     its name, exactly as it does in the app.</p>
+
+    <p><strong>Export FogTrail backup</strong> creates a private JSON restore file
+    with your finished walks and routes, revealed areas, kept and received places,
+    discovery progress, memories, Privacy Zone and local share history. Importing
+    it merges with the data already on your device. This is a manual file backup,
+    not automatic cloud sync. The file is not encrypted by FogTrail and keeps your
+    full routes, including protected areas, so store it somewhere private.</p>
 
     <h2>Deleting your account</h2>
     <p>If you signed in, open <strong>Me → Settings &amp; privacy → Delete
