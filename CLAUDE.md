@@ -24,9 +24,13 @@ The plain `git push` can fail with 403 because the macOS keychain (`osxkeychain`
 - **Bump `Last updated:` on any content change.** It sits under the title in `privacy`, `terms` and `safety`, and went stale twice.
 - **Before a build that adds friends, chat or sync ships, rewrite Privacy, Terms and Safety first** (the app's `Roadmap.md` requires it), and re-answer age-rating questions from their current Apple definitions (user-generated names/hints exist even without chat; selected-recipient inbox is distinct from a public/amplifying feed). The Phase C pages were rewritten October 8–9, 2026 and published October 9, 2026; see `../marketing/appstore/phase-c-release-checklist.md`.
 
+## Where these pages live (decided 2026-10-10)
+
+GitHub Pages stays the canonical home. `www.cairnstudio.si` (Cloudflare Pages, repo `~/Desktop/Live Apps/CairnStudio-site/`) links here from `/fogtrail/` and its footer, and every page here links back from its footer. Do not move them: live 1.0 hard-codes this host in `LegalLinks.site`, and `cairnstudio.si/fogtrail/privacy.html` is NOT a page — Cloudflare's fallback serves the home page with a 200.
+
 ## Conventions
 
-- Contact is `support@cairnstudio.si` (mailto links carry a `?subject=` of `FogTrail Support|Privacy|Terms`). It appears in `support`, `privacy` and `terms`; `index` and `safety` show no address.
+- Contact is `support@cairnstudio.si` (mailto links carry a `?subject=` of `FogTrail Support|Privacy|Terms`). It appears in `support`, `privacy`, `terms` and `safety` (its Contact section); `index` shows no address.
 - Pages share one skeleton — `<div class="wrap">`, a `header.brand`, `h1.title`, `p.updated`, `.card` / `.card.warn` callouts and a closing `nav.links`. `style.css` uses a dark theme driven by `:root` variables; reuse them rather than adding colours.
 - Commit messages are `docs: …` (conventional commits), as in the existing history.
 - A dated site copy that is not a git clone deploys nothing — this one is a clone; check `git remote get-url origin` if in doubt.
